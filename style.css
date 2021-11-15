@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkCyan: hsl(179, 100%, 13%);
+  --whiteParagraphs: hsla(0, 0%, 100%, 0.75);
+  --lightGray: hsl(0, 0%, 95%);
+  --big:'Big Shoulders Display', cursive;
+  --deca: 'Lexend Deca', sans-serif;
+}
+
+body{
+  background-color: var(--lightGray);
+}
+
+.container{
+  margin: 50px auto;
+  width: 900px;
+  height: 480px;
+  background-color:yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  
+}
+
+.box{
+  background-color:var(--orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.box1{
+  background-color:var(--cyan);
+}
+
+.box2{
+  background-color:var(--darkCyan);
+  border-radius: 0 10px 10px 0;
+}
+
+img{
+  margin: 40px 0 20px 40px;
+}
+
+.title{
+  font-family: var(--big);
+  margin: 20px 40px;
+  color: var(--lightGray);
+}
+
+.text{
+  font-family: var(--deca);
+  margin: 20px 40px 30px 40px;
+  color: var(--whiteParagraphs);
+  font-size: .9rem;
+  line-height: 1.7rem;
+}
+
+input{
+  margin: 40px;
+  padding: 15px;
+  width: 130px;
+  border-radius: 30px;
+  border: none;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.input1{
+  color: var(--orange);
+}
+
+.input2{
+  color: var(--cyan);
+}
+
+.input3{
+  color: var(--darkCyan);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
